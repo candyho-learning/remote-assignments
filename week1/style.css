@@ -13,7 +13,7 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background-color: lightgoldenrodyellow;
+  background-color: #f1f1f1;
 }
 
 * {
@@ -38,6 +38,7 @@ h2 {
   width: 100%;
   min-width: 400px;
   height: 100%;
+  background-color: lightgoldenrodyellow;
 }
 
 nav {
@@ -195,7 +196,6 @@ button:active {
 @media only screen and (min-width: 1200px) {
   .most-outer {
     max-width: 1200px;
-    border: 1px solid black;
   }
   #hero {
     background-color: greenyellow;
