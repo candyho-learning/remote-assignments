@@ -59,9 +59,6 @@ nav {
   margin-left: -20px;
 }
 
-#hamburger-menu {
-}
-
 .hero {
   background: url("https://images.unsplash.com/photo-1502691876148-a84978e59af8?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDUwNDI2ODJ8&ixlib=rb-4.0.3&q=85");
   background-size: cover;
@@ -81,6 +78,7 @@ section {
 main {
   flex-direction: column;
   padding: 20px;
+  background-color: lightgoldenrodyellow;
 }
 
 .card-ctn {
