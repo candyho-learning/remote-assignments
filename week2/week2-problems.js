@@ -1,5 +1,5 @@
 /*
-Assignment 1: Function and Array DONE
+Assignment 1: Function and Array DONE UPDATED
 Complete the function below to find the max number of the passing array of numbers.
 Reminder: you can't use built-in Math.max() or sort() to complete this assignment.
 */
@@ -7,14 +7,11 @@ Reminder: you can't use built-in Math.max() or sort() to complete this assignmen
 function max(numbers) {
   let result = numbers[0];
   //validate input
-  if (numbers.some((x) => isNaN(x))) {
+  if (numbers.some((x) => isNaN(x)))
     return "Please make sure all elements are numbers.";
-  } else if (numbers.length === 0) {
-    return []; //account for empty arrays
-  } else {
-    for (let i = 1; i < numbers.length; i++) {
-      result = numbers[i] > result ? numbers[i] : result;
-    }
+  if (numbers.length === 0) return []; //account for empty arrays
+  for (let i = 1; i < numbers.length; i++) {
+    result = numbers[i] > result ? numbers[i] : result;
   }
   return result;
 }
