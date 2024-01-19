@@ -2,8 +2,8 @@
 const hero = document.querySelector(".hero");
 const pageTitle = document.querySelector("h1");
 const cardContainers = document.querySelectorAll(".card-container");
-const ctaButton = document.querySelector("button");
-const hamburgerMenu = document.querySelector("#hamburger-menu");
+const ctaButton = document.querySelector("button.cta-button");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
 const mobileMenu = document.querySelector(".mobile-menu");
 const closeMobileMenu = document.querySelector(".fa-xmark");
 

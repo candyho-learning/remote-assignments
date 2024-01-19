@@ -115,7 +115,7 @@ main {
   color: var(--primary);
 }
 
-button {
+.cta-button {
   margin: 20px auto;
   width: 150px;
   height: 50px;
@@ -128,13 +128,13 @@ button {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-button:hover {
+.cta-button:hover {
   cursor: pointer;
   opacity: 0.6;
   transform: scale(1.1);
 }
 
-button:active {
+.cta-button:active {
   opacity: 0.8;
 }
 
@@ -213,7 +213,7 @@ button:active {
     background-color: rgb(0, 187, 255);
   }
 
-  #hamburger-menu,
+  .hamburger-menu,
   .mobile-menu {
     display: none;
   }
