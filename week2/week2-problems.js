@@ -20,38 +20,35 @@ function max(numbers) {
 }
 
 /* 
-Assignment 2: Function and Object DONE
+Assignment 2: Function and Object DONE REVISIT UPDATED
 Complete the function below to calculate the result of the passing object.
 */
 
 function calculate({ n1, n2, op }) {
   //assuming both n1 & n2 are numbers
   const operators = "+-*/";
-  if (!operators.includes(op)) {
-    return "Not Supported.";
-  } else {
-    switch (op) {
-      case "+":
-        return n1 + n2;
-        break;
-      case "-":
-        return n1 - n2;
-        break;
-      case "*":
-        return n1 * n2;
-        break;
-      case "/":
-        return n1 / n2;
-        break;
-    }
+  if (!operators.includes(op)) return "Not Supported.";
+  switch (op) {
+    case "+":
+      return n1 + n2;
+      break;
+    case "-":
+      return n1 - n2;
+      break;
+    case "*":
+      return n1 * n2;
+      break;
+    case "/":
+      return n1 / n2;
+      break;
   }
 }
+
 /*
-Assignment 3: Function, Array, and Object DONE
+Assignment 3: Function, Array, and Object DONE REVISIT UPDATED
 Complete the function below to calculate the total price of all products after applying a
 discount.
 */
-
 /*
 const data1 = {
   discount: 0.5,
@@ -66,30 +63,22 @@ const data1 = {
     },
     {
       name: "Product 3",
-      price: 250,
+      price: 200,
     },
   ],
 };
-
 */
 
 function calculate({ discount, products }) {
   let total = 0;
   //validate input, assuming discount & products.price are numbers
-  if (discount < 0 || discount > 1) {
-    //valid discount amount
-    return "Discount invalid.";
-  } else if (products.length === 0) {
-    //check if the products array is empty
-    return "There are no products.";
-  } else {
-    for (product of products) {
-      total += product.price;
-    }
-    return `With a ${discount * 100}% discount applied, your total is  $${
-      total * (1 - discount)
-    }. `;
+  //valid discount amount
+  if (discount < 0 || discount > 1) return "Discount invalid.";
+  if (products.length === 0) return "There are no products.";
+  for (product of products) {
+    total += product.price;
   }
+  return total * (1 - discount);
 }
 
 // show the total price of all products after applying a discount
