@@ -52,8 +52,9 @@
 
       //Handle Click
       function handleClick() {
+        const baseURL = window.location.origin;
         const inputNum = document.querySelector("#inputNum").value;
-        let fetchURL = `http://localhost:3000/getData`;
+        let fetchURL = `${baseURL}/getData`;
         if (inputNum !== "") fetchURL += `?number=${inputNum}`;
         fetch(fetchURL)
           .then((response) => {

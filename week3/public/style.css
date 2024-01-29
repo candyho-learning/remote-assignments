@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  min-width: 900px;
   height: 500px;
   background-color: #fbd2d7;
   display: flex;
@@ -18,7 +19,7 @@ body {
 }
 
 main {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 input,
