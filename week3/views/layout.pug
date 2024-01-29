@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        title Appworks Week3 Assignment
+        link(rel="stylesheet", href="style.css")
+    body
+        header 
+            h1 Appworks Week3 Assignment
+        main
+            block content            
+        footer 
+            div.links
+                .link-group 
+                    h4 Jump To
+                    a(href="/") Root
+                    a(href="/sum.html") sum.html file
+                    a(href="/myName") myName Page
+                .link-group 
+                    h4 /getData Quick Test
+                    a(href="/getData") No params
+                    a(href="/getData?number=10") Number param
+                    a(href="/getData?number=xyz") Wrong param
+                .link-group 
+                    h4 /myName Quick Test
+                    a(href="/trackName?name=Rick") My name is Rick
+                    a(href="/trackName?name=Morty") My name is Morty
+            div.creator 
+                h1 QUICK ACCESS
+                p Quick access to assignment requirement tests.
+                p(class="signature")  Created by Candy Ho 🍬

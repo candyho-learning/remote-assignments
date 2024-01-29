@@ -1,0 +1,11 @@
+extends layout.pug
+block content
+    if (name) 
+        h2 ¡Hola! #{name} 👋
+        form(action="/trackName", method="POST")
+            button.small-button Forget Me
+    else
+        h2 Hello, what's your name? 
+        form(action="/trackName", method="GET") 
+            input(type="text", name="name")
+            input(type="submit")

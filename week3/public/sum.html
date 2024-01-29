@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Enter a number to get the result of 1+2+3+...+n</h1>
+    <!-- The form submit way
+      <form action="http://localhost:3000/getData" method="GET">
+      <label>Enter a number, nothing or a short string.</label>
+      <input type="text" name="number" />
+      <input type="submit" />
+    </form> -->
+    <input type="text" name="inputNum" id="inputNum" />
+    <button>GO</button>
+    <footer>
+      <div class="links">
+        <div class="link-group">
+          <h4>Jump To</h4>
+          <a href="/">Root</a><a href="/sum.html">sum.html file</a
+          ><a href="/myName">myName Page</a>
+        </div>
+        <div class="link-group">
+          <h4>/getData Quick Test</h4>
+          <a href="/getData">No params</a
+          ><a href="/getData?number=10">Number param</a
+          ><a href="/getData?number=xyz">Wrong param</a>
+        </div>
+        <div class="link-group">
+          <h4>/myName Quick Test</h4>
+          <a href="/trackName?name=Rick">My name is Rick</a
+          ><a href="/trackName?name=Morty">My name is Morty</a>
+        </div>
+      </div>
+      <div class="creator">
+        <h1>QUICK ACCESS</h1>
+        <p>Quick access to assignment requirement tests.</p>
+        <p class="signature">Created by Candy Ho 🍬</p>
+      </div>
+    </footer>
+
+    <script>
+      const button = document.querySelector("button");
+
+      //Helper functions
+      function displayH1(content) {
+        document.body.innerHTML = `<h1>${content}</h1>`;
+      }
+
+      //Handle Click
+      function handleClick() {
+        const inputNum = document.querySelector("#inputNum").value;
+        let fetchURL = `http://localhost:3000/getData`;
+        if (inputNum !== "") fetchURL += `?number=${inputNum}`;
+        fetch(fetchURL)
+          .then((response) => {
+            console.log(response);
+            if (response.ok) {
+              return response.text();
+            }
+          })
+          .then((data) => displayH1(data))
+          .catch((err) => {
+            console.error(err);
+            //Display error to users
+            displayH1(err.message);
+          });
+      }
+      button.addEventListener("click", handleClick);
+    </script>
+  </body>
+</html>
