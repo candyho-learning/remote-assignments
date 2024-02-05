@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/remote-assignments/static/css/main.ee6be1db.css",
-    "main.js": "/remote-assignments/static/js/main.06e5efb3.js",
-    "static/js/592.a17788db.chunk.js": "/remote-assignments/static/js/592.a17788db.chunk.js",
-    "index.html": "/remote-assignments/index.html",
-    "main.ee6be1db.css.map": "/remote-assignments/static/css/main.ee6be1db.css.map",
-    "main.06e5efb3.js.map": "/remote-assignments/static/js/main.06e5efb3.js.map",
-    "592.a17788db.chunk.js.map": "/remote-assignments/static/js/592.a17788db.chunk.js.map"
+    "main.css": "/remote-assignments/week4/static/css/main.ee6be1db.css",
+    "main.js": "/remote-assignments/week4/static/js/main.c2469ce7.js",
+    "static/js/592.a17788db.chunk.js": "/remote-assignments/week4/static/js/592.a17788db.chunk.js",
+    "index.html": "/remote-assignments/week4/index.html",
+    "main.ee6be1db.css.map": "/remote-assignments/week4/static/css/main.ee6be1db.css.map",
+    "main.c2469ce7.js.map": "/remote-assignments/week4/static/js/main.c2469ce7.js.map",
+    "592.a17788db.chunk.js.map": "/remote-assignments/week4/static/js/592.a17788db.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee6be1db.css",
-    "static/js/main.06e5efb3.js"
+    "static/js/main.c2469ce7.js"
   ]
 }
