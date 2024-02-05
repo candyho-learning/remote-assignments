@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-image: linear-gradient(
+          45deg,
+          #fa8bff 0%,
+          #2bd2ff 52%,
+          #2bff88 90%
+        );
+        background-size: cover;
+        min-width: 660px;
+        min-height: 100vh;
+
+      .title {
+        text-align: center;
+        font-size: 2.7rem;
+      }
+
+      main {
+        background-color: #f1f1f1;
+        opacity: 0.85;
+        margin: 50px;
+        border-radius: 10px;
+        padding: 50px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      .row:hover {
+        border-left: 8px solid mediumslateblue;
+      }
+
+      .listing-text {
+        width: 70%;
+      }
+
+      .price {
+        width: 30%;
+        margin: 0;
+        text-align: right;
+        font-weight: bold;
+        font-size: 1.8rem;
+      }
+    </style>
+
+    <title>Week4 Assignment 1&2</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Product Listings from Fetch</h1>
+    </main>
+    <script>
+      // TODO Assignment 1: Callback Function DONE
+      // Complete the function below to show a delayed result in the console.
+      function delayedResult(n1, n2, delayTime, callback) {
+        setTimeout(callback, delayTime, n1 + n2);
+      }
+
+      // TODO Assignment 2: HTML DOM and AJAX DONE
+      // Complete the functions below to make an AJAX call to a URL by Fetch API, and show the
+      // response data in the page. You may render UI with any style.
+      const main = document.querySelector("main");
+      const url =
+        "https://remote-assignment.s3.ap-northeast-1.amazonaws.com/products";
+      function ajax(url) {
+        return fetch(url).then((res) => res.json());
+      }
+
+      function render(data) {
+        for (product of data) {
+          main.insertAdjacentHTML(
+            "beforeend",
+            `
+                  <div class="row">
+                    <div class="listing-text">
+                        <h1>${product.name}</h1>
+                        <p>${product.description}</p>
+                    </div>
+                    <p class="price">$${product.price}</p>
+                  </div>
+                  `
+          );
+        }
+      }
+      ajax(url).then((data) => render(data));
+    </script>
+  </body>
+</html>
