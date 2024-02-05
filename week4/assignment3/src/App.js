@@ -20,7 +20,6 @@ function App() {
   return (
     <div>
       <MobileMenu showMobileMenu={showMobileMenu} closeMenu={closeMobileMenu} />
-      {/* <div class="most-outer"> */}
       <NavBar openMenu={openMobileMenu} />
       <Hero />
       <main>
@@ -33,7 +32,6 @@ function App() {
         />
         <CardContainer isHidden={showMore} />
       </main>
-      {/* </div> */}
     </div>
   );
 }
