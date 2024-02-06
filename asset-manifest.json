@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/remote-assignments/week4/static/css/main.ee6be1db.css",
-    "main.js": "/remote-assignments/week4/static/js/main.c2469ce7.js",
-    "static/js/592.a17788db.chunk.js": "/remote-assignments/week4/static/js/592.a17788db.chunk.js",
-    "index.html": "/remote-assignments/week4/index.html",
-    "main.ee6be1db.css.map": "/remote-assignments/week4/static/css/main.ee6be1db.css.map",
-    "main.c2469ce7.js.map": "/remote-assignments/week4/static/js/main.c2469ce7.js.map",
-    "592.a17788db.chunk.js.map": "/remote-assignments/week4/static/js/592.a17788db.chunk.js.map"
+    "main.css": "/candyho-learning/week4-secondary/static/css/main.ee6be1db.css",
+    "main.js": "/candyho-learning/week4-secondary/static/js/main.977be8b1.js",
+    "static/js/592.a17788db.chunk.js": "/candyho-learning/week4-secondary/static/js/592.a17788db.chunk.js",
+    "index.html": "/candyho-learning/week4-secondary/index.html",
+    "main.ee6be1db.css.map": "/candyho-learning/week4-secondary/static/css/main.ee6be1db.css.map",
+    "main.977be8b1.js.map": "/candyho-learning/week4-secondary/static/js/main.977be8b1.js.map",
+    "592.a17788db.chunk.js.map": "/candyho-learning/week4-secondary/static/js/592.a17788db.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee6be1db.css",
-    "static/js/main.c2469ce7.js"
+    "static/js/main.977be8b1.js"
   ]
 }
